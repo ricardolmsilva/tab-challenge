@@ -11,6 +11,12 @@
   overflow: auto;
 }
 
+@media (max-width: 600px) {
+  .tab-content {
+    height: fit-content;
+  }
+}
+
 .tab-content.active {
   display: block;
   padding: 40px 45px;
