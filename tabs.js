@@ -55,4 +55,24 @@ function createTabsContent(tab, index) {
   tabsContent.append(div);
 }
 
-function handleTabClick(e) {}
+function handleTabClick(e) {
+  const id = e.target.getAttribute("tab_num");
+  const tabs = document.querySelectorAll(".tab");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach((tab) => {
+    tab.classList.remove("active");
+
+    if (id == tab.getAttribute("tab_num")) {
+      tab.classList.add("active");
+    }
+  });
+
+  contents.forEach((content) => {
+    content.classList.remove("active");
+
+    if (id == content.getAttribute("tab_num")) {
+      content.classList.add("active");
+    }
+  });
+}
