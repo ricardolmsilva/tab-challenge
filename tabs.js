@@ -28,3 +28,4 @@ function createTabs(tab, index) {
 }
 
 function createTabsContent(tab, index) {}
+function handleTabClick(e) {}
