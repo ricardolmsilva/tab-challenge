@@ -29,6 +29,7 @@ main {
 
 main *:focus {
   outline: none;
+  font-style: italic;
 }
 
 button {

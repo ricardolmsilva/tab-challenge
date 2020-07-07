@@ -15,6 +15,7 @@ function createTabs(tab, index) {
 
   button.innerText = tab.title;
   button.addEventListener("click", handleTabClick);
+  button.setAttribute("tabindex", 0);
 
   // Attribute to verify what is the content that is related to that tab
   button.setAttribute("tab_num", tab.id);
@@ -40,6 +41,7 @@ function createTabsContent(tab, index) {
   // Content Title
   const h1 = document.createElement("h1");
   h1.classList.add("content", "content-title");
+  h1.setAttribute("tabindex", 0);
   h1.innerText = tab.content.title;
   div.append(h1);
 
@@ -47,6 +49,7 @@ function createTabsContent(tab, index) {
   tab.content.pagragraphs.forEach((p) => {
     const paragraph = document.createElement("p");
     paragraph.classList.add("content", "content-paragraph");
+    paragraph.setAttribute("tabindex", 0);
     paragraph.innerText = p;
     div.append(paragraph);
   });
