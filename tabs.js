@@ -1,13 +1,4 @@
 window.onload = function loadData() {
-  //   fetch("./data.json")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       data.forEach((tab, index) => {
-  //         createTabs(tab, index);
-  //         createTabsContent(tab, index);
-  //       });
-  //     });
-
   data.forEach((tab, index) => {
     createTabs(tab, index);
     createTabsContent(tab, index);
