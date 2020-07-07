@@ -1,0 +1,29 @@
+#tabs-content {
+  color: var(--font-color);
+  width: 100%;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  display: none;
+  background: var(--light-color);
+  height: 150px;
+  overflow: auto;
+}
+
+.tab-content.active {
+  display: block;
+  padding: 40px 45px;
+}
+
+.content {
+  padding: 5px 0;
+}
+.content-title {
+  font-size: 18px;
+}
+
+.content-paragraph {
+  font-size: 14px;
+  line-height: 24px;
+}

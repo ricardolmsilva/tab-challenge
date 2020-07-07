@@ -1,0 +1,11 @@
+:root {
+  --font-family: sans-serif;
+  --body-bg: #f4f4f6;
+  --font-color: #003165;
+  --light-color: white;
+
+  /* Button styles */
+  --btn-bg-color: #e2e9ec;
+  --btn-bg-color-active: white;
+  --btn-border-color-active: #00a9ab;
+}
